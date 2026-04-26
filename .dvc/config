@@ -1,0 +1,5 @@
+[core]
+    remote = myremote
+['remote "myremote"']
+    url = s3://datasets
+    endpointurl = http://147.45.147.94:9000
