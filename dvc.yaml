@@ -1,0 +1,21 @@
+stages:
+  prepare:
+    cmd: python src/split_data.py
+    deps:
+      - data/titanic.csv
+      - src/split_data.py
+    params:
+      - prepare.test_size
+      - prepare.random_state
+    outs:
+      - data/train.csv
+      - data/test.csv
+  train:
+    cmd: python src/train.py
+    deps:
+      - data/train.csv
+      - data/test.csv
+      - src/train.py
+    params:
+      - train.n_estimators
+      - train.max_depth

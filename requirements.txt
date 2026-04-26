@@ -1,0 +1,8 @@
+mlflow~=3.11.1
+mlflow-skinny~=3.11.1
+pandas~=2.3.3
+scikit-learn~=1.8.0
+diagrams~=0.25.1
+feast~=0.62.0
+tqdm~=4.67.3
+protobuf~=6.33.6

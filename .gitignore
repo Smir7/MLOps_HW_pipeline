@@ -1,3 +1,8 @@
-/titanic.csv
-/train.csv
-/test.csv
+/data/titanic.csv
+/data/train.csv
+.venv/
+__pycache__/
+mlruns/
+mlflow.db
+data/
+data/test.csv
